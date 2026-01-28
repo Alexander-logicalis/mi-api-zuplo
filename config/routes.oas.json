@@ -1,0 +1,24 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "My Zuplo API"
+  },
+  "paths": {
+    "/api/mensajes": {
+      "get": {
+        "x-zuplo-handler": {
+          "handler": "@zuplo/runtime:proxy-http-url",
+          "url": "http://localhost:3000/api/mensajes"
+        }
+      },
+      "post": {
+        "x-zuplo-handler": {
+          "handler": "@zuplo/runtime:proxy-http-url",
+          "url": "http://localhost:3000/api/mensajes"
+        }
+      }
+    }
+  }
+  
+}
