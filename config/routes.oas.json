@@ -43,9 +43,7 @@
             }
           },
           "policies": {
-            "inbound": [
-              "rate-limiting-test"
-            ]
+            "inbound": []
           }
         },
         "summary": "API POST"
