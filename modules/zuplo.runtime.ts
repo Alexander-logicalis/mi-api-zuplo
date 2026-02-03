@@ -13,7 +13,7 @@ export function runtimeInit(runtime: RuntimeExtensions) {
       // index, provided by Akamai API Security
       index: 2,
       // Key provided by Akamai API Security
-      key: environment.AKAMAI_API_SECURITY_KEY,
+      key: "db3a1942-3df5-4994-9543-9f3196f885b1",
       // Enable the active prevention/protection feature
       enableProtection: true,
     }),

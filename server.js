@@ -3,11 +3,11 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 
 const app = express();
-
+app.disable('x-powered-by'); 
 app.use(cors());
 app.use(express.json()); // Permite recibir datos en formato JSON
 
-// 1. Conexión a MongoDB (Reemplaza con tu URI de Atlas)
+// 1. Conexión a MongoDB 
 const mongoURI = "mongodb+srv://mcdeiling35_db_user:rlwj075sctuWaoB3@cluster0.mrfiqhs.mongodb.net/?appName=Cluster0";
 mongoose.connect(mongoURI)
   .then(() => console.log("Conectado a MongoDB"))
